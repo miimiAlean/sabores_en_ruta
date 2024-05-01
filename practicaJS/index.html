@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores en Ruta</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script1.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+<div id="errorMessage" style="color: red; display: none;">Por favor, ingrese un término de búsqueda válido.
+</div>
+<main><h1>Sabores en Ruta</h1>
+
+    <div>
+        <input type="text" id="searchInput" placeholder="Ingrese su búsqueda...">
+        <button id="searchButton"><img src="lupa.png" alt="Buscar"></button>
+        <select id="searchOption">
+            <option value="name">Nombre del Plato</option>
+            <option value="ingredient">Ingrediente Principal</option>
+            <option value="category">Categoría</option>
+            <option value="area">Área (Nacionalidad)</option>
+        </select>
+    </div>
+</main>
+<div id="resultsGallery"></div>
+</body>
+</html>
